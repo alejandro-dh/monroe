@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "message": "Hola grupo!"
+    },
+    {
+        "id": 2,
+        "message": "Buenas tardes"
+    },
+    {
+        "id": 3,
+        "message": "Hoy tenemos clase de express"
+    }
+]

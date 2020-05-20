@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <% errors.forEach(error => { %>
+        <p><%= error.msg %></p>
+    <% }) %> 
+    
+    <form action="/users/register" method="POST" autocomplete="off">
+        <div>
+            <label for="">Email</label>
+            <input type="text" name="email" value="<%= data.email %>">
+        </div>
+        <div>
+            <label for="">Clave</label>
+            <input type="text" name="password" value="<%= (typeof data != "undefined") ? data.password : '' %>">
+        </div>
+        <div>
+            <label for="">Confirmar clave</label>
+            <input type="text" name="password_confirmation" value="<%= (typeof data != "undefined") ? data.password_confirmation : '' %>">
+        </div>
+        <div>
+            <button>Enviar</button>
+        </div>
+    </form>
+
+</body>
+</html>
